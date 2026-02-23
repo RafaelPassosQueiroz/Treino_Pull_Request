@@ -41,6 +41,21 @@
         .btn:hover {
             background-color: #45a049;
         }
+        form {
+            background-color: #4CAF50;
+            margin: auto;
+            padding: 20px;
+            border-radius: 20px;
+            width: 180px;
+            align-items: center;
+        }
+        input {
+            display: block;
+        }
+        form button {
+            margin: 10px auto 0 auto;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -65,6 +80,13 @@
     </section>
 
     <button class="btn">Clique aqui para aprender mais!</button>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome">
+        <label for="idade">Idade:</label>
+        <input type="text" name="idade">
+        <button type="submit">Enviar</button>
+    </form>
 </main>
 
 <footer>
