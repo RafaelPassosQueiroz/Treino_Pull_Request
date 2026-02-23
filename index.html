@@ -8,8 +8,21 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f9;
+            background-image: url("assets/plantas.jpg");
+            background-repeat: repeat;      
+            background-position: top left;  
+            background-size: auto;          
             margin: 0;
             padding: 0;
+        }
+        h2 {
+            color: white;
+        }
+        p {
+            color: white;
+        }
+        ul, li {
+            color: white;
         }
         header {
             background-color: #4CAF50;
@@ -19,6 +32,15 @@
         }
         main {
             padding: 20px;
+            justify-content: center;
+            text-align: center;
+        }
+        ul {
+            width: 300px;
+            margin: 0 auto;
+        }
+        section {
+            margin-bottom: 60px;
         }
         footer {
             background-color: #333;
@@ -41,6 +63,27 @@
         }
         .btn:hover {
             background-color: #45a049;
+        }
+        form {
+            background-color: #4CAF50;
+            margin: auto;
+            padding: 20px;
+            border-radius: 20px;
+            width: 180px;
+            align-items: center;
+            z-index: 1;
+        }
+        input {
+            display: block;
+            border-radius: 10px;
+        }
+        form button {
+            margin-top: 10px;
+            text-align: center;
+            border-radius: 10px;
+            color: black;
+            background-color: green;
+            padding: 10px;
         }
     </style>
 </head>
@@ -66,6 +109,14 @@
     </section>
 
     <a href="https://github.com/RafaelPassosQueiroz/Treino_Pull_Request"><button class="btn">Clique aqui para acessar o Github!</button></a>
+    <button class="btn">Clique aqui para aprender mais!</button>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome">
+        <label for="idade">Idade:</label>
+        <input type="text" name="idade">
+        <button type="submit">Enviar</button>
+    </form>
 </main>
 
 <footer>
